@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --abyss: #05080f;
+  --navy: #0a1424;
+  --card: rgba(9, 20, 33, 0.74);
+  --hair: rgba(70, 227, 234, 0.22);
+  --cyan: #46e3ea;
+  --cyan-2: #1fb6c8;
+  --amber: #ffba49;
+  --green: #7af0a8;
+  --red: #ff6b6b;
+  --text: #e9f1f8;
+  --mut: #8da0b3;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--abyss);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(
+    1100px 640px at 70% 0%,
+    #0b2435,
+    #05080f 60%
+  );
+  background-attachment: fixed;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-display {
+  font-family: var(--font-rajdhani), system-ui, sans-serif;
+}
+
+.hud-label {
+  font-family: var(--font-rajdhani), system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+
+/* Prevent text selection / callouts while mashing the helm buttons. */
+.no-touch-select {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: none;
+}
